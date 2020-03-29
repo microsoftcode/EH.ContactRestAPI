@@ -1,0 +1,121 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ContactRestAPI</name>
+    </assembly>
+    <members>
+        <member name="T:ContactRestAPI.Controllers.ContactController">
+            <summary>
+            contacts endpoint of contacts API.
+            </summary>
+        </member>
+        <member name="M:ContactRestAPI.Controllers.ContactController.#ctor(ContactRestAPI.Data.IContactRepository,Microsoft.Extensions.Logging.ILogger{ContactRestAPI.Controllers.ContactController})">
+            <summary>
+            Creates a new instance of <see cref="T:ContactRestAPI.Controllers.ContactController"/> with dependencies injected.
+            </summary>
+            <param name="contactRepository">A repository for managing the contact.</param>
+            <param name="logger">Logger implementation.</param>
+        </member>
+        <member name="M:ContactRestAPI.Controllers.ContactController.Delete(System.Int32)">
+            <summary>
+            Delete the contact with the given id.
+            </summary>
+            <param name="id">Id of the contact to delete.</param>
+        </member>
+        <member name="M:ContactRestAPI.Controllers.ContactController.GetAll">
+            <summary>
+            Get all contacts.
+            </summary>
+        </member>
+        <member name="M:ContactRestAPI.Controllers.ContactController.GetById(System.Int32)">
+            <summary>
+            Get a single contact by id.
+            </summary>
+            <param name="id">Id of the contact to retrieve.</param>
+        </member>
+        <member name="M:ContactRestAPI.Controllers.ContactController.Post(ContactRestAPI.Models.ContactInput)">
+            <summary>
+            Create a new contact from the supplied data.
+            </summary>
+            <param name="model">Data to create the contact from.</param>
+        </member>
+        <member name="M:ContactRestAPI.Controllers.ContactController.Put(System.Int32,ContactRestAPI.Models.ContactInput)">
+            <summary>
+            Updates the contact with the given id.
+            </summary>
+            <param name="id">Id of the contact to update.</param>
+            <param name="model">Data to update the contact from.</param>
+        </member>
+        <member name="T:ContactRestAPI.Data.Contact">
+            <summary>
+            Represents a Contact information
+            </summary>
+        </member>
+        <member name="P:ContactRestAPI.Data.Contact.Id">
+            <summary>
+            Gets or sets the Id.
+            </summary>
+        </member>
+        <member name="P:ContactRestAPI.Data.Contact.FirstName">
+            <summary>
+            Gets or sets the FirstName.
+            </summary>
+        </member>
+        <member name="P:ContactRestAPI.Data.Contact.LastName">
+            <summary>
+            Gets or sets the LastName
+            </summary>
+        </member>
+        <member name="P:ContactRestAPI.Data.Contact.Email">
+            <summary>
+            Gets or sets the Email
+            </summary>
+        </member>
+        <member name="P:ContactRestAPI.Data.Contact.PhoneNumber">
+            <summary>
+            Gets or sets the PhoneNumber
+            </summary>
+        </member>
+        <member name="P:ContactRestAPI.Data.Contact.Status">
+            <summary>
+            Gets or sets the Status
+            </summary>
+        </member>
+        <member name="T:ContactRestAPI.Models.ContactInput">
+            <summary>
+            Represents a single Contact to be saved.
+            </summary>
+        </member>
+        <member name="P:ContactRestAPI.Models.ContactInput.FirstName">
+            <summary>
+            Gets or sets the FirstName.
+            </summary>
+            [Required]
+        </member>
+        <member name="P:ContactRestAPI.Models.ContactInput.LastName">
+            <summary>
+            Gets or sets the LastName
+            </summary>
+        </member>
+        <member name="P:ContactRestAPI.Models.ContactInput.Email">
+            <summary>
+            Gets or sets the Email
+            </summary>
+        </member>
+        <member name="P:ContactRestAPI.Models.ContactInput.PhoneNumber">
+            <summary>
+            Gets or sets the PhoneNumber
+            </summary>
+        </member>
+        <member name="P:ContactRestAPI.Models.ContactInput.Status">
+            <summary>
+            Gets or sets the Status
+            </summary>
+        </member>
+        <member name="M:ContactRestAPI.Models.ContactInput.MapToContact(ContactRestAPI.Data.Contact)">
+            <summary>
+            Copy data to <see cref="T:ContactRestAPI.Data.Contact"/> instance.
+            </summary>
+        </member>
+    </members>
+</doc>
