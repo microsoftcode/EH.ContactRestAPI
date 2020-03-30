@@ -7,3 +7,15 @@ Project Details.
 2.	Contact.Rest.API.Tests
    This is a Unit test project written in xUnit and Moq.
 
+Database:
+•	Used Ef Core with Code first implementation
+•	Created Initial migration
+•	Used Repository pattern 
+Expectation Handling 
+•	Created Custom middle ware 
+API documentation
+•	Created Swagger for more clear documentation
+Rest Principles 
+•	Implemented Rest principles 
+
+
